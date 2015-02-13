@@ -1,0 +1,94 @@
+\documentclass[11pt,draft]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+\newcolumntype{S}{X}
+\newcolumntype{D}{>{\hsize=2cm}X}
+
+\newenvironment{grayout}{\color{gray}}{\ignorespacesafterend}
+
+\newcommand{\printsigndate}[1]{%
+    \vspace{5mm}
+    \begin{tabularx}{\textwidth}{S S D}
+        \hrulefill{} & \hrulefill{} & \hrulefill{} \\
+        \strut{}#1\strut{}&
+        \strut{}#1 Signature\strut{}&
+        \strut{}Date\strut{}
+    \end{tabularx}%
+}
+
+\def\TheRelease{Release}
+\def\TheInstallers{Installers}
+\def\AnInstaller{Installer}
+
+\begin{document}
+
+\begin{center} \LARGE
+    Installfest Release Form
+\end{center}
+
+\vspace{1em}
+
+This Release Agreement (``\TheRelease'') is an agreement between you and
+the members of the \textbf{UMBC Linux Users Group} and \emph{all event
+attendees} who work on your computer on the behalf of the UMBC Linux
+Users Group (``\TheInstallers''). By signing this Release, you agree to
+waive your right to pursue legal action and you should therefore read
+this \TheRelease{} carefully. If you have any questions about the legal
+effect of this agreement, you should consult an attorney. Please be
+aware that you may not participate in the event unless you have read and
+signed this \TheRelease. By signing this \TheRelease{}, you acknowledge
+the following:
+
+\begin{enumerate}
+\item that your signing this agreement is partial consideration for the
+    services provided by the \TheInstallers{}.
+
+\item that \TheInstallers{} do not promise that the work done on your
+    computer equipment will be successful; an \AnInstaller{} will help
+    you attempt to install and/or configure the Linux operating system,
+    but not every attempt is successful.
+
+\item that the attempt to install and/or configure the Linux operating
+    system poses potential dangers that no amount of care, caution,
+    instruction, or expertise can eliminate.
+
+\item that the attempt to install and/or configure the Linux operating
+    system may result in the loss of some or all of the data stored on
+    your computer's hard disks.
+
+\item that you are responsible for the security of your personal
+    property.
+
+\item that you are expressly assuming the risks of the dangers set forth
+    above.
+
+\item that by signing this release agreement, you hereby forever release
+    the \TheInstallers{} from any legal liability that arises from the
+    attempt to install and/or configure the Linux operating system; and
+    this release includes, but is not limited to, any losses caused by
+    the negligence of any \AnInstaller{} who attempts to install and/or
+    configure Linux on your computer equipment.
+
+\end{enumerate}
+
+\vfill
+
+{\scshape I acknowledge that I have read this Release Agreement and that
+    I understand the language and terminology contained within. I have
+    been advised of the potential dangers involved in the process of
+    installing and configuring my computer and other electronic
+    equipment.
+}
+
+\begin{flushright}
+\printsigndate{Attendee} \\
+\printsigndate{\AnInstaller} \\
+\begin{grayout}
+\printsigndate{\AnInstaller} \\
+\printsigndate{\AnInstaller}
+\end{grayout}
+\end{flushright}
+
+\end{document}
