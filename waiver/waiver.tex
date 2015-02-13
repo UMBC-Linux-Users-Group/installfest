@@ -1,12 +1,9 @@
 \documentclass[11pt,draft]{article}
 \usepackage[margin=2cm]{geometry}
 \usepackage{tabularx}
-\usepackage{xcolor}
 
 \newcolumntype{S}{X}
 \newcolumntype{D}{>{\hsize=2cm}X}
-
-\newenvironment{grayout}{\color{gray}}{\ignorespacesafterend}
 
 \newcommand{\printsigndate}[1]{%
     \vspace{5mm}
@@ -84,11 +81,7 @@ the following:
 
 \begin{flushright}
 \printsigndate{Attendee} \\
-\printsigndate{\AnInstaller} \\
-\begin{grayout}
-\printsigndate{\AnInstaller} \\
-\printsigndate{\AnInstaller}
-\end{grayout}
+\printsigndate{Witness} \\
 \end{flushright}
 
 \end{document}
