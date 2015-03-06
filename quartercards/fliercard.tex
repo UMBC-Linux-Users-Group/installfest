@@ -2,8 +2,11 @@
 
 \usepackage[paperwidth=4in,paperheight=5.25in,margin=0.125in]{geometry}
 \usepackage{wrapfig}
+\usepackage{array}
 \usepackage[none]{hyphenat} % Disable all hyphenation
 \usepackage{svg}
+
+\newcolumntype{S}{>{\centering\arraybackslash} m{.4\linewidth} }
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.3cm}
@@ -34,6 +37,14 @@
 }
 
 \vfill
+
+
+\begin{tabular}{SS}
+    \includegraphics[width=0.40\textwidth]{ubuntu-logo} &
+    \includegraphics[width=0.40\textwidth]{linuxmint-logo} \\
+    \includegraphics[width=0.40\textwidth]{fedora-logo} &
+    \includegraphics[width=0.40\textwidth]{archlinux-logo} \\
+\end{tabular}
 
 \begin{minipage}[bt]{0.58\textwidth}
     \begin{center}
