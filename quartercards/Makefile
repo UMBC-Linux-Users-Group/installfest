@@ -7,7 +7,7 @@ fliercard.pdf: fliercard.tex tux-bw.pdf archlinux-logo.pdf ubuntu-logo.pdf \
 flierpage.pdf: flierpage.tex fliercard.pdf
 	pdflatex flierpage.tex
 
-tux-bw.pdf: tux-bw.svg
+tux-bw.pdf: ../logos/tux-bw.svg
 	inkscape -z -D --file=$^ --export-pdf=$@
 
 # Build PDFs from the SVG logos.
