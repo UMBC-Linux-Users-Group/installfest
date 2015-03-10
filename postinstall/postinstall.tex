@@ -2,8 +2,10 @@
 % notumble - keep the second page right-side-up
 
 
-\usepackage[none]{hyphenat}
-\usepackage{textcomp} % for copyleft symbol
+\usepackage[none]{hyphenat} % to remove hyphenation, instead justifying
+\usepackage{multicol}       % for multicolumn bullet lists
+\usepackage{textcomp}       % for copyleft symbol
+\usepackage{amssymb}        % for checkboxes
 
 
 \begin{document}
@@ -16,6 +18,36 @@ If you're reading this document, then it's likely you've had some form of Linux
 installed on your laptop by members of the UMBC Linux Users' Group. You have
 dived into the unfamiliar, and we hope that this pamphlet can guide you through
 your first few weeks.
+
+On your computer is a freshly installed copy of
+\begin{multicols}{2}
+\begin{itemize}
+    \item[$\square$] Ubuntu
+    \item[$\square$] Linux Mint
+    \item[$\square$] Fedora
+    \item[$\square$] Archlinux
+\end{itemize}
+\end{multicols}
+with the desktop environment
+\begin{multicols}{2}
+\begin{itemize}
+    \item[$\square$] GNOME
+    \item[$\square$] XFCE
+    \item[$\square$] LXDE
+    \item[$\square$] KDE
+    \item[$\square$] Cinnamon
+    \item[$\square$] Awesomewm
+\end{itemize}
+\end{multicols}
+
+\vfill
+
+\begin{figure}[hb]
+    \centering
+    \includegraphics[width=0.60\textwidth]{tux-bw}
+\end{figure}
+
+\pagebreak
 
 \section{Installing Software}
 
