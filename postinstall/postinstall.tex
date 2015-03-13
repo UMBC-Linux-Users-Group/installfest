@@ -102,24 +102,28 @@ equivalents; if you need help finding another replacement, see
 \label{section:linux-for-cmsc}
 
 The Computer Science curriculum at UMBC uses languages such as Python, C, and
-C++. Typically, one would use the remote GL system to develop programs for these
-courses. GL, as it happens, stands for GNU/Linux, which is the core of the
-operating system that is now on your computer. This means that the very same
-software you develop using GL should also be able to run on computer.
+C++. Students are normally instructed to use tools such as PuTTY to remotely
+connect to the GL system, and develop their software there. GL also has Linux at
+its core, so if you choose to investigate parts of your operating system, you
+may find it similar.
 
-Similarly, if you decide to do so, you can develop software on your computer
-that should be able to run on GL\@. Sometimes there are compatibility issues due
-to old versions of libraries, so remember to be cautious about ensuring that
-your program works on GL before submitting it.
+Connecting remotely to GL from Linux does not require an external program such
+as PuTTY\@; the standard protocol used to connect between Linux and Linux-alike
+computers is called SSH, and stands for Secure SHell. You can connect to GL by
+opening a terminal or a shell on your own computer, usually in your application
+menu with an icon such as \verb+>_+, access a command line interface similar to
+GL's. Once opened, you can enter \verb+ssh user@gl.umbc.edu+ where \verb+user+
+is your email username, and you will be prompted to enter your password. Once
+complete, you can execute commands on GL\@ as you normally would via PuTTY\@.
 
-That being said, it is very easy to use your new operating system in the same
-way that you have used GL in the past; instead of using SSH or PuTTY to connect
-remotely, you can open a terminal or a shell on your own computer, usually in
-your application menu with an icon such as \verb+>_+, and have access to a
-similar command line interface. You may need to install additional tools such as
-\texttt{emacs} or \texttt{make} in order to have the same environment. If you
-encounter issues, and would like to pursue this use of Linux, please read about
-our meetings and our mailing list under \nameref{section:getting-help}.
+If you are slightly more advanced, you may also want to be aware that you can
+develop software locally on your computer. We can't provide a guide here, for
+lack of space, but you may want to look into visiting our meetings and asking
+for assistance.
+
+% % XXX: had to cut this paragraph for space
+% If you encounter issues, and would like to pursue this use of Linux, please read
+% about our meetings and our mailing list under \nameref{section:getting-help}.
 
 \section{Getting Help}
 \label{section:getting-help}
